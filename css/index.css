@@ -2436,14 +2436,14 @@ for tabs and large phones
       transition: all .5s ease;
     }
     .blog-text h3{
-      font-size: 28px;
+      font-size: 18px;
       font-weight: 500;
       height: 20%;
       padding: 20px;
       letter-spacing: 1px;
     }
     .blog-text p{
-        font-size: 18px;
+        font-size: 14px;
         opacity: .9;
         font-weight: 400;
         height: 80%;
