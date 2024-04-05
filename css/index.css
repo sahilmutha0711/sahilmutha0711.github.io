@@ -1380,7 +1380,7 @@ For devices with smaller width like mobile phone
         font-size: 55px;
     }
     .color2{
-        font-size: 20px !important;
+        font-size: 23px !important;
     }
     .header-content .secondline{
         font-size: 20px;
@@ -1393,7 +1393,7 @@ For devices with smaller width like mobile phone
         float: right;
         height: auto;
         width: 0%;
-        opacity: 0.5; 
+        opacity: 0.7; 
     }
     .social-media{
         opacity: 1;
