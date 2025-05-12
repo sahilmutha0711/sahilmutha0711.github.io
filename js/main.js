@@ -98,7 +98,7 @@
                 strings: ['Generative AI', 'Data Science', 'Data Engineering', 'Data Analysis', 'Machine Learning', 'Natural Language Processing', 'Artificial Intelligence'],
                 typeSpeed: 60,
                 backSpeed: 40,
-                backDelay: 2000,
+                backDelay: 3500,
                 loop: true
             });
         }
