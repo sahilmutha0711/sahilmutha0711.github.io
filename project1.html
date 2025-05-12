@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name | Sahil Mutha Portfolio</title>
+    <meta name="description" content="Detailed information about this project, including technologies used, key features, and implementation process.">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Splide Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body class="project-page">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle id="loader-circle" cx="40" cy="40" r="32"></circle>
+            </svg>
+            <div class="percent">0%</div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">Sahil<span class="accent">.</span></span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="index.html#projects" class="nav-link active">Projects</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Project Header -->
+        <section class="project-header">
+            <div class="container">
+                <h1 class="project-title">Project Title</h1>
+                <div class="project-meta">
+                    <div class="project-category"><i class="fas fa-tag"></i> Web Development</div>
+                    <div class="project-date"><i class="fas fa-calendar-alt"></i> January 2025</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Showcase -->
+        <section class="project-showcase">
+            <div class="container">
+                <div class="project-carousel" data-aos="zoom-in">
+                    <div class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="images/projects/project1.png" alt="Project Image 1">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="images/projects/project2.png" alt="Project Image 2">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="images/projects/project3.jpg" alt="Project Image 3">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="images/projects/project4.jpg" alt="Project Image 4">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details -->
+        <section class="project-details">
+            <div class="container">
+                <div class="project-overview" data-aos="fade-up">
+                    <h2>Project Overview</h2>
+                    <div class="project-description">
+                        A fully responsive e-commerce website with product filtering, cart functionality, and payment integration. This project features a modern UI design, seamless shopping experience, and robust admin dashboard for managing products, orders, and customer data.
+                    </div>
+                </div>
+
+                <div class="project-tech-stack" data-aos="fade-up" data-aos-delay="100">
+                    <h2>Technologies Used</h2>
+                    <ul class="tech-list">
+                        <li><i class="fab fa-react"></i> React.js</li>
+                        <li><i class="fab fa-node-js"></i> Node.js</li>
+                        <li><i class="fas fa-database"></i> MongoDB</li>
+                        <li><i class="fab fa-node"></i> Express.js</li>
+                        <li><i class="fas fa-code"></i> Redux</li>
+                        <li><i class="fas fa-credit-card"></i> Stripe API</li>
+                    </ul>
+                </div>
+
+                <div class="project-features" data-aos="fade-up" data-aos-delay="200">
+                    <h2>Key Features</h2>
+                    <ul class="features-list">
+                        <li><i class="fas fa-user-shield"></i> User Authentication</li>
+                        <li><i class="fas fa-filter"></i> Product Filtering</li>
+                        <li><i class="fas fa-shopping-cart"></i> Shopping Cart</li>
+                        <li><i class="fas fa-money-bill-wave"></i> Payment Integration</li>
+                        <li><i class="fas fa-truck-moving"></i> Order Tracking</li>
+                        <li><i class="fas fa-chart-line"></i> Admin Dashboard</li>
+                    </ul>
+                </div>
+
+                <div class="project-challenges" data-aos="fade-up" data-aos-delay="300">
+                    <h2>Challenges & Solutions</h2>
+                    <div class="challenges-content">
+                        One of the main challenges was implementing a real-time inventory management system that would update across multiple user sessions. I solved this by using Socket.io to create a WebSocket connection for live updates. Another challenge was optimizing the site performance with a large product database. To address this, I implemented lazy loading, pagination, and MongoDB indexing to improve query efficiency.
+                    </div>
+                </div>
+
+                <div class="project-links" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#" class="btn btn-primary demo-link">
+                        <span class="btn-text">Live Demo</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="#" class="btn btn-secondary github-link">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+
+                <div class="project-navigation" data-aos="fade-up" data-aos-delay="500">
+                    <a href="#" class="prev-project">
+                        <i class="fas fa-arrow-left"></i> Previous Project
+                    </a>
+                    <a href="index.html#projects" class="all-projects">All Projects</a>
+                    <a href="#" class="next-project">
+                        Next Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="logo-text">Sahil<span class="accent">.</span></span>
+                    </a>
+                    <p class="footer-description">Building digital experiences that make a difference.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to my newsletter for the latest updates on my projects and tech articles.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sahil Mutha. All Rights Reserved.</p>
+                <p class="credits">Designed & Developed with <i class="fas fa-heart"></i> by Sahil Mutha</p>
+            </div>
+        </div>
+        <div class="footer-waves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill-opacity="0.5" d="M0,224L60,213.3C120,203,240,181,360,181.3C480,181,600,203,720,229.3C840,256,960,288,1080,272C1200,256,1320,192,1380,160L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+            </svg>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
