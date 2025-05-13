@@ -2737,7 +2737,6 @@ body {
 /* Ensure all sections respect viewport width */
 section {
     max-width: 100vw;
-    overflow-x: hidden;
 }
 
 /* Fix the achievements grid for small screens */
